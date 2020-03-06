@@ -4,13 +4,14 @@ import 'firebase/firestore'
 
 // Your web app's Firebase configuration
 var firebaseConfig = {
-	apiKey: "AIzaSyBIgux8TIvuQxLgOOMaIfQTuGPKsWSuq4o",
-	authDomain: "vue-admin-app.firebaseapp.com",
-	databaseURL: "https://vue-admin-app.firebaseio.com",
-	projectId: "vue-admin-app",
-	storageBucket: "vue-admin-app.appspot.com",
-	messagingSenderId: "667957378569",
-	appId: "1:667957378569:web:a6a3dac75aa72709"
+	apiKey: "AIzaSyBO8PoAoW9yxfjn8fo1Zt7NVY0YEzDoggc",
+	authDomain: "vue-admin-tuts.firebaseapp.com",
+	databaseURL: "https://vue-admin-tuts.firebaseio.com",
+	projectId: "vue-admin-tuts",
+	storageBucket: "vue-admin-tuts.appspot.com",
+	messagingSenderId: "306148421023",
+	appId: "1:306148421023:web:d9b48d8f83aef20a78e1aa",
+	measurementId: "G-YBC27C8S3H"
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);

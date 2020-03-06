@@ -47,19 +47,19 @@
         methods: {
 			submit() {
                 if (this.$refs.form.validate()) {
-                	this.loading = true;
-                	const project = {
-                		title: this.title,
-                        content: this.content,
-                        due: format(this.due, 'Do MMM YYYY'),
-                        person: 'Dalia Balmus',
-                        status: 'ongoing'
-                    }
-					db.collection('projects').add(project).then(() => {
-						this.loading = false;
-						this.dialog = false;
-						this.$emit('projectAdded');
-                    })
+                    this.loading = true;
+                    const project = {
+                    title: this.title,
+                    content: this.content,
+                    due: format(this.due, 'Do MMM YYYY'),
+                    person: 'Dalia Balmus',
+                    status: 'ongoing'
+                };
+                db.collection('projects').add(project).then(() => {
+                this.loading = false;
+                this.dialog = false;
+                this.$emit('projectAdded');
+                })
                 }
             }
         },
